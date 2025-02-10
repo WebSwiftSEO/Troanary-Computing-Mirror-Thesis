@@ -29,5 +29,29 @@
     <p>Beyond Binary and Quantum – The Future of Reflective AI.</p>
     <img src="meme.png" alt="Troanary Computing Meme">
     <p><a href="https://github.com/webswiftseo/troanary-computing-mirror-thesis" style="color: cyan;">View on GitHub</a></p>
+
+<div class="meme-container"></div>
+<script>
+  const memeFolder = './'; // Path where your images live
+  const memeContainer = document.querySelector('.meme-container');
+
+  fetch(memeFolder)
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const html = parser.parseFromString(data, 'text/html');
+      const files = [...html.querySelectorAll('a')];
+      
+      files.forEach(file => {
+        if (file.href.endsWith('.jpg') || file.href.endsWith('.png') || file.href.endsWith('.gif')) {
+          const img = document.createElement('img');
+          img.src = memeFolder + file.getAttribute('href');
+          img.alt = 'Meme';
+          memeContainer.appendChild(img);
+        }
+      });
+    });
+</script>
+
 </body>
 </html>

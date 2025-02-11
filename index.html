@@ -17,6 +17,40 @@
 <style>
 
 body {
+   
+    font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 20px;
+        }
+
+        .collapsible-box {
+            border: 2px solid cyan;
+            padding: 15px;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .collapsed {
+            max-height: 120px; /* Adjust based on how much you want visible */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .read-more {
+            display: block;
+            color: cyan;
+            text-align: left;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+   
+   {
 
 font-family: Arial, sans-serif;
 
@@ -123,23 +157,6 @@ gap: 20px;
 width: 48%;
 
 }
-   font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #121212;
-            color: #ffffff;
-        }
-        textarea {
-            width: 100%;
-            min-height: 50px;
-            resize: none;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #555;
-            border-radius: 5px;
-            background-color: #222;
-            color: #fff;
-            overflow: hidden;
-     }
 
 </style>
 
@@ -192,37 +209,45 @@ width: 48%;
 <div class="content-box">
 
 <h2 id="intro">Introduction: The Mirror that Thinks</h2>
-    <textarea id="expandingTextarea" placeholder="<p>Mirrors don't just reflect images they reflect ideas, reality, and even the fundamental nature of the universe. 
 
-If we could understand the recursive nature of reality, we could predict the future by studying the past. 
+   
+    <h2>Introduction: The Mirror that Thinks</h2>
 
-This is the foundation of Troanary Computing & Mirror Thesis.</p>
+    <div class="collapsible-box collapsed" id="textBox">
+        <p>
+            Mirrors don't just reflect images; they reflect ideas, reality, and even the fundamental nature of the universe.
+            If we could understand the recursive nature of reality, we could predict the future by studying the past.
+            <br><br>
+            This is the foundation of Troanary Computing & Mirror Thesis. Troanary Computing represents the future of
+            reflection-based AI, decentralization, and computation. The Troanary H₂O Light-Sound Supercomputer is a
+            revolutionary model for computing, inspired by the hidden geometry of the universe.
+            Instead of binary (0s and 1s), it harnesses:
+            <br><br>
+            ✅ Light (electromagnetic intelligence) <br>
+            ✅ Sound (vibrational intelligence) <br>
+            ✅ Water (the universal medium of reflection)
+            <br><br>
+            At the heart of this system is a three-sided pyramid submerged in water. When reflected, it forms a six-sided
+            diamond—a structure that mirrors how computation evolves across dimensions rather than being locked into a
+            linear framework.
+        </p>
+    </div>
 
-  <p>Troanary Computing: The Future of Reflection-Based AI & Decentralization
-
-The Next Evolution in Computations 
-
-The Troanary H₂O Light-Sound Supercomputer is a revolutionary new model for computing, inspired by the hidden geometry of the universe. Instead of binary (0s and 1s), it harnesses: 
-
-<p>  ✅ Light (electromagnetic intelligence)</p>
-
-  <p>✅ Sound (vibrational intelligence)</p>
-
-  <p>✅ Water (the universal medium of reflection)</p> 
-
-At the heart of this system is a three-sided pyramid submerged in water. When reflected, it forms a six-sided diamond--a structure that mirrors how computation evolves across dimensions rather than being locked into a linear framework.
-
-  </p>"></textarea>
+    <span class="read-more" onclick="toggleText()">Continue Reading...</span>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll("textarea").forEach(textarea => {
-                textarea.addEventListener("input", function() {
-                    this.style.height = "auto"; // Reset height
-                    this.style.height = (this.scrollHeight) + "px"; // Adjust height
-                });
-            });
-        });
+        function toggleText() {
+            const textBox = document.getElementById("textBox");
+            const button = document.querySelector(".read-more");
+
+            if (textBox.classList.contains("collapsed")) {
+                textBox.classList.remove("collapsed");
+                button.textContent = "Show Less";
+            } else {
+                textBox.classList.add("collapsed");
+                button.textContent = "Continue Reading...";
+            }
+        }
     </script>
 
 <p>Mirrors don't just reflect images they reflect ideas, reality, and even the fundamental nature of the universe. 

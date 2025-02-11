@@ -347,6 +347,21 @@ width: 48%;
 
 <span class="read-more" onclick="toggleText('textBox3', this)">Continue Reading...</span>
 
+    <script>
+        function toggleText() {
+            const textBox = document.getElementById("textBox");
+            const button = document.querySelector(".read-more");
+
+            if (textBox.classList.contains("collapsed")) {
+                textBox.classList.remove("collapsed");
+                button.textContent = "Show Less";
+            } else {
+                textBox.classList.add("collapsed");
+                button.textContent = "Continue Reading...";
+            }
+        }
+    </script>
+
 <!-- Images -->
 <picture>
     <source srcset="images/a_futuristic_visualization_of_laser_beams_reflecti.webp" type="image/webp">

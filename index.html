@@ -256,20 +256,14 @@ width: 48%;
    
    <span class="read-more" onclick="toggleText('textBox1', this)">Continue Reading...</span>
 
-    <script>
-        function toggleText() {
-            const textBox = document.getElementById("textBox");
-            const button = document.querySelector(".read-more");
+<textarea id="expanding-textbox" oninput="resizeTextArea(this)"></textarea>
 
-            if (textBox.classList.contains("collapsed")) {
-                textBox.classList.remove("collapsed");
-                button.textContent = "Show Less";
-            } else {
-                textBox.classList.add("collapsed");
-                button.textContent = "Continue Reading...";
-            }
-        }
-    </script>
+<script>
+  function resizeTextArea(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
+  }
+</script>
 
 
 <img src="images/Reflection-Concept.jpg" alt="Reflection Concept" style="display: block; margin: auto;">
@@ -347,20 +341,14 @@ width: 48%;
 
 <span class="read-more" onclick="toggleText('textBox2', this)">Continue Reading...</span>
 
-    <script>
-        function toggleText() {
-            const textBox = document.getElementById("textBox");
-            const button = document.querySelector(".read-more");
+<textarea id="expanding-textbox" oninput="resizeTextArea(this)"></textarea>
 
-            if (textBox.classList.contains("collapsed")) {
-                textBox.classList.remove("collapsed");
-                button.textContent = "Show Less";
-            } else {
-                textBox.classList.add("collapsed");
-                button.textContent = "Continue Reading...";
-            }
-        }
-    </script>
+<script>
+  function resizeTextArea(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
+  }
+</script>
 
 <!-- Images -->
 <picture>

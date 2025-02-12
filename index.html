@@ -254,16 +254,56 @@ width: 48%;
 </p>
     </div>
    
-   <span class="read-more" onclick="toggleText('textBox1', this)">Continue Reading...</span>
+<span class="read-more" onclick="toggleText('textBox1', this)">Continue Reading...</span>
 
 <textarea id="expanding-textbox" oninput="resizeTextArea(this)"></textarea>
 
 <script>
+  function toggleText(id, element) {
+      var textBox = document.getElementById(id);
+      if (textBox.classList.contains("collapsed")) {
+          textBox.classList.remove("collapsed");
+          textBox.style.maxHeight = textBox.scrollHeight + "px"; // Expand smoothly
+          element.textContent = "Show Less";
+      } else {
+          textBox.classList.add("collapsed");
+          textBox.style.maxHeight = "120px"; // Collapse back
+          element.textContent = "Continue Reading...";
+      }
+  }
+
   function resizeTextArea(textarea) {
-    textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + 'px';
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
   }
 </script>
+
+<style>
+    .collapsible-box {
+        border: 2px solid cyan;
+        padding: 6px;
+        width: 96%;
+        max-width: 800px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .collapsed {
+        max-height: 120px;
+        overflow: hidden;
+    }
+
+    .read-more {
+        display: block;
+        color: cyan;
+        text-align: left;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
 
 
 <img src="images/Reflection-Concept.jpg" alt="Reflection Concept" style="display: block; margin: auto;">

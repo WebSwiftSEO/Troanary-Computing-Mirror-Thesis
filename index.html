@@ -246,9 +246,11 @@
         let textBox = document.getElementById(id);
         if (textBox.classList.contains("collapsed")) {
             textBox.classList.remove("collapsed");
+            textBox.style.maxHeight = textBox.scrollHeight + "px"; // Expand properly
             btn.textContent = "Show Less";
         } else {
             textBox.classList.add("collapsed");
+            textBox.style.maxHeight = "120px"; // Set initial collapsed height
             btn.textContent = "Continue Reading...";
         }
     }
@@ -267,7 +269,7 @@
     }
 
     .collapsed {
-        max-height: 120px;
+        max-height: 120px; /* Allows expansion */
         overflow: hidden;
     }
 

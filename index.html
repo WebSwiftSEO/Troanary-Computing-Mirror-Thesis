@@ -90,15 +90,37 @@
         <!-- Table of Contents -->
         
         <h2 id="contents">📜 Contents</h2>
+
         <ul>
             <li><a href="#intro">Introduction: The Mirror that Thinks</a></li>
             <li><a href="#troanary">Troanary Computing: Beyond Binary</a></li>
+            <li><a href="#math">Troanary Mathematics: The Hidden Code</a></li>
             <li><a href="#quantum">Quantum Reflection & Superposition</a></li>
             <li><a href="#ai">Reflective AI & Neural Networks</a></li>
             <li><a href="#society">Mirror Theory & Human Society</a></li>
             <li><a href="#energy">Energy, Music & The Universe</a></li>
+        
+            <!-- Dropdown Menu for Experiments -->
+            <li>
+                <a href="javascript:void(0);" onclick="toggleDropdown('experiments-menu')">
+                    Troanary Thesis Experiments ▼
+                </a>
+                <ul id="experiments-menu" style="display: none; padding-left: 20px; list-style-type: circle;">
+                    <li><a href="#superposition">Troanary Quantum Superposition</a></li>
+                    <li><a href="#entanglement">Troanary Quantum Entanglement</a></li>
+                    <li><a href="#double-slit">Troanary Quantum Double-Slit Experiment</a></li>
+                </ul>
+            </li>
+        
             <li><a href="#conclusion">Conclusion: The Mirror of Everything</a></li>
         </ul>
+        
+        <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.style.display = (dropdown.style.display === "none") ? "block" : "none";
+            }
+        </script>
 
 
 

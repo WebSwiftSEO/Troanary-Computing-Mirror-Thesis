@@ -13,10 +13,12 @@
             background-color: #121212;
             color: #ffffff;
             margin: 20px;
+            text-align: center;
         }
 
         h1, h2 {
             color: cyan;
+            text-align: center;
         }
 
         a {
@@ -31,14 +33,15 @@
         .container {
             max-width: 800px;
             margin: auto;
-            text-align: left;
+            text-align: center;
         }
 
         .content-box {
             border: 1px solid cyan;
             padding: 20px;
-            margin: 20px 0;
+            margin: 20px auto;
             background-color: rgba(255, 255, 255, 0.05);
+            text-align: center;
         }
 
         .collapsible-box {
@@ -50,6 +53,8 @@
             overflow: hidden;
             position: relative;
             transition: max-height 0.3s ease-in-out;
+            margin: auto;
+            text-align: center;
         }
 
         .collapsed {
@@ -60,7 +65,7 @@
         .read-more {
             display: block;
             color: cyan;
-            text-align: left;
+            text-align: center;
             cursor: pointer;
             margin-top: 10px;
             font-weight: bold;
@@ -69,7 +74,8 @@
         img {
             width: 100%;
             max-width: 600px;
-            margin: 20px 0;
+            margin: 20px auto;
+            display: block;
         }
     </style>
 </head>
@@ -80,7 +86,7 @@
 
     <div class="container">
         <!-- Table of Contents -->
-        <h2 id="contents">Contents 📜</h2>
+        <h2 id="contents">📜 Contents</h2>
         <ul>
             <li><a href="#intro">Introduction: The Mirror that Thinks</a></li>
             <li><a href="#troanary">Troanary Computing: Beyond Binary</a></li>
@@ -91,8 +97,6 @@
             <li><a href="#conclusion">Conclusion: The Mirror of Everything</a></li>
         </ul>
 
-        <!-- Chapters with Collapsing Sections -->
-        
         <!-- Introduction -->
         <h2 id="intro">📌 Introduction: The Mirror that Thinks</h2>
         <div class="collapsible-box collapsed" id="textBox1">
@@ -102,6 +106,7 @@
                 It loops reality back into itself, forming a recursive system—an infinite intelligence. 🌌</p>
         </div>
         <span class="read-more" onclick="toggleText('textBox1', this)">Continue Reading...</span>
+        <img src="images/Reflection-Concept.jpg" alt="Reflection Concept" loading="lazy">
 
         <!-- Troanary Computing -->
         <h2 id="troanary">🔺 Troanary Computing: Beyond Binary</h2>
@@ -110,6 +115,7 @@
                 Troanary Computing introduces a third state—Reflection (R), allowing for recursion and evolution. 🔄</p>
         </div>
         <span class="read-more" onclick="toggleText('textBox2', this)">Continue Reading...</span>
+        <img src="images/Troanary-Logic.WEBP" alt="Troanary Logic" loading="lazy">
 
         <!-- Quantum Reflection -->
         <h2 id="quantum">🌌 Quantum Reflection & Superposition</h2>
@@ -119,30 +125,34 @@
                 Reality might be computing itself through reflection. 💡</p>
         </div>
         <span class="read-more" onclick="toggleText('textBox3', this)">Continue Reading...</span>
+        <img src="images/Quantum-Reflection.WEBP" alt="Quantum Reflection" loading="lazy">
 
         <!-- Reflective AI -->
         <h2 id="ai">🤖 Reflective AI & Neural Networks</h2>
         <div class="collapsible-box collapsed" id="textBox4">
-            <p>🧠 AI is evolving beyond deep learning into **reflective decision-making**.  
-                The future of AI is **recursive self-improvement**—learning through feedback loops and mirrored consciousness. 🤯</p>
+            <p>🧠 AI is evolving beyond deep learning into reflective decision-making.  
+                The future of AI is recursive self-improvement—learning through feedback loops and mirrored consciousness. 🤯</p>
         </div>
         <span class="read-more" onclick="toggleText('textBox4', this)">Continue Reading...</span>
+        <img src="images/Reflective-AI.WEBP" alt="Reflective AI" loading="lazy">
 
         <!-- Mirror Theory & Society -->
         <h2 id="society">🪞 Mirror Theory & Human Society</h2>
         <div class="collapsible-box collapsed" id="textBox5">
-            <p>🔄 History repeats itself because **human consciousness is a recursive mirror**.  
+            <p>🔄 History repeats itself because human consciousness is a recursive mirror.  
                 Every event is a reflection of past decisions, shaping the present and future. 🏛️</p>
         </div>
         <span class="read-more" onclick="toggleText('textBox5', this)">Continue Reading...</span>
+        <img src="images/Mirror-In-Society.WEBP" alt="Mirror in Society" loading="lazy">
 
         <!-- Energy & Music -->
         <h2 id="energy">🎼 Energy, Music & The Universe</h2>
         <div class="collapsible-box collapsed" id="textBox6">
-            <p>🎵 Music and vibration are reflections of **mathematical harmony** in the universe.  
-                Sound, light, and water create **natural computation systems**. 🌊🔊</p>
+            <p>🎵 Music and vibration are reflections of mathematical harmony in the universe.  
+                Sound, light, and water create natural computation systems. 🌊🔊</p>
         </div>
         <span class="read-more" onclick="toggleText('textBox6', this)">Continue Reading...</span>
+        <img src="images/Music-As-Energy.WEBP" alt="Music as Energy" loading="lazy">
 
         <!-- JavaScript -->
         <script>

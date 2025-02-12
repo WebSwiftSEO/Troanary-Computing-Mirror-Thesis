@@ -328,9 +328,9 @@
         
 
 
-    <!-- Troanary Mathematics: The Hidden Code Experiment -->
+    <!-- Troanary Mathematics: The Hidden Code -->
         
-<h2 id="troanary-math">Troanary Mathematics: The Hidden Code Experiment</h2>
+<h2 id="troanary-math">Troanary Mathematics: Hidden Codes</h2>
 
 <!-- Top Box: Music & Vibration Perspective -->
 <div class="content-box">
@@ -525,7 +525,7 @@
 
         
 <div class="content-box">
-    <h2 id="ai">Reflective AI & Neural Networks: Thought Evolution 🤖🪞</h2>
+    <h2 id="ai">Reflective AI & Neural Networks 🤖🪞</h2>
 
     <div class="collapsible-box collapsed" id="aiBox">
         <p>🧠 <b>What is Reflective AI?</b></p>
@@ -662,7 +662,7 @@
         <!-- Energy & Music -->
 
         <div class="content-box">
-    <h2 id="energy">🎶 Energy, Music & The Universe: Existence of Symphony 🌌</h2>
+    <h2 id="energy">🎶 Energy, Music & The Universe!*!</h2>
 
     <div class="collapsible-box collapsed" id="energyBox">
         
@@ -1042,7 +1042,7 @@
 
 
         <div class="content-box">
-    <h2 id="double-slit">Troanary Quantum Double-Slit Experiment</h2>
+    <h2 id="double-slit">Troanary Quantum Double-Slit</h2>
 
     <!-- Collapsible Text Box - Top (Music & Vibration Explanation) -->
     <div class="collapsible-box collapsed" id="textBoxDoubleSlitTop">
@@ -1132,7 +1132,7 @@
       <!-- Conclusions  -->
 
         <div class="content-box">
-    <h2 id="conclusion">🔮 Conclusions: The Mirror of Everything 🎶🪞🚀</h2>
+    <h2 id="conclusion">🔮Conclusions: The Mirror of Everything🪞</h2>
 
     <div class="collapsible-box collapsed" id="conclusionBox">
         
@@ -1214,6 +1214,62 @@
                 }
             }
         </script>
+
+
+
+
+        <div id="unused-images-container">
+    <h2 style="text-align: center; color: cyan;">🔻 Unused Images Archive 🔻</h2>
+    <div class="unused-images">
+        <picture>
+            <source data-srcset="images/troanary_quantum_double_slit_experiment.webp" type="image/webp">
+            <img data-src="images/troanary_quantum_double_slit_experiment.png" alt="Troanary Quantum Double-Slit Experiment" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/troanary_quantum_entanglement.webp" type="image/webp">
+            <img data-src="images/troanary_quantum_entanglement.png" alt="Troanary and Quantum Entanglement" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/troanary_thesis_experiments.webp" type="image/webp">
+            <img data-src="images/troanary_thesis_experiments.png" alt="Troanary Thesis Experiments" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/troanary_mathematics_hidden_code.webp" type="image/webp">
+            <img data-src="images/troanary_mathematics_hidden_code.png" alt="Troanary Mathematics: The Hidden Code" class="lazy-image">
+        </picture>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll(".lazy-image");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                const source = img.closest("picture").querySelector("source");
+
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                }
+                if (source && source.dataset.srcset) {
+                    source.srcset = source.dataset.srcset;
+                }
+
+                img.style.opacity = 1;
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    lazyImages.forEach(img => observer.observe(img));
+});
+</script>
+
 
         
 

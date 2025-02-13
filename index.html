@@ -16,6 +16,90 @@
             text-align: center;
         }
 
+
+                /* 🔥 EPIC CYAN LASER BUTTON 🔥 */
+        .menu-toggle {
+            background: linear-gradient(90deg, cyan, #00ffff, cyan);
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0px 0px 15px cyan;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+        }
+        
+        .menu-toggle:hover {
+            box-shadow: 0px 0px 25px cyan;
+            transform: scale(1.1);
+        }
+        
+        /* 🌌 EXPANDING NAV MENU */
+        .page-menu {
+            display: none;
+            background-color: rgba(0, 255, 255, 0.15);
+            text-align: center;
+            padding: 15px 0;
+            border-top: 3px solid cyan;
+            border-radius: 10px;
+            max-width: 300px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 20px cyan;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* 🌟 MENU ITEMS */
+        .page-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .page-menu li {
+            padding: 10px;
+        }
+        
+        .page-menu a {
+            color: cyan;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .page-menu a:hover {
+            background-color: rgba(0, 255, 255, 0.2);
+            box-shadow: 0px 0px 10px cyan;
+        }
+        
+        /* 📂 DROPDOWN MENU */
+        .dropdown-content {
+            display: none;
+            background-color: rgba(0, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 5px 0;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+
+        
+
         h1, h2 {
             color: cyan;
             text-align: center;
@@ -82,10 +166,10 @@
 
 <body>
     
-    <!-- Menu Button -->
-<button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+<!-- 🔥 CYAN LASER MENU BUTTON -->
+<button class="menu-toggle" onclick="toggleMenu()">☰ Open Menu</button>
 
-<!-- Expanding Navigation Menu -->
+<!-- 📜 EXPANDING NAV MENU -->
 <nav class="page-menu">
     <ul id="menu-list">
         <li><a href="index.html">🏠 Home</a></li>
@@ -106,6 +190,7 @@
         <li><a href="conclusion.html">🔚 Conclusion</a></li>
     </ul>
 </nav>
+
 
     <h1 id="top">Troanary Computing & The Mirror Thesis</h1>
     <p><i>"If everything is a mirror, then even this thesis reflects itself."</i></p>

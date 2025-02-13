@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -590,9 +590,9 @@
 
 
     
-        <!-- Mirror Theory & Society -->
+  <!-- Mirror Theory & Society -->
+<div class="content-box">
 
-        <div class="content-box">
     <h2 id="society">Mirror Theory & Human Society</h2>
 
     <div class="collapsible-box collapsed" id="societyBox">
@@ -603,7 +603,7 @@
         <p>Mirror Theory suggests that **everything we experience in others is a reflection of something within ourselves**.  
         The world is a giant mirror, showing us who we are, what we believe, and how we think—whether we realize it or not. 🧠</p>
 
-        <p>💡 **Why Does This Matter?**</p>
+        <p>💡 <b>Why Does This Matter?</b></p>
         <p>Because if society is a mirror, then **our relationships, conflicts, and even love itself**  
         are all reflections of our own inner state. 🌍💖</p>
 
@@ -624,10 +624,10 @@
 
         <p>🔄 <b>Reflections of Society</b></p>
         <ul>
-            <li>👥 **Relationships** – Every connection is a reflection of how we feel about ourselves.</li>
-            <li>💔 **Love & Heartbreak** – Love mirrors the parts of ourselves we need to heal.</li>
-            <li>⚖️ **Politics & Power** – Corruption in leadership reflects dishonesty within the collective.</li>
-            <li>🌍 **The World’s Problems** – If society is broken, it means humanity’s mindset is fragmented.</li>
+            <li>👥 <b>Relationships</b> – Every connection is a reflection of how we feel about ourselves.</li>
+            <li>💔 <b>Love & Heartbreak</b> – Love mirrors the parts of ourselves we need to heal.</li>
+            <li>⚖️ <b>Politics & Power</b> – Corruption in leadership reflects dishonesty within the collective.</li>
+            <li>🌍 <b>The World’s Problems</b> – If society is broken, it means humanity’s mindset is fragmented.</li>
         </ul>
 
         <p>🚪 <b>When Does a Mirror Become a Portal?</b></p>
@@ -651,18 +651,22 @@
     </div>
 
     <span class="read-more" onclick="toggleText('societyBox', this)">Continue Reading...</span>
+
 </div>
 
+<script>
+function toggleText(boxId, button) {
+    const textBox = document.getElementById(boxId);
+    if (textBox.classList.contains("collapsed")) {
+        textBox.classList.remove("collapsed");
+        button.textContent = "Show Less";
+    } else {
+        textBox.classList.add("collapsed");
+        button.textContent = "Continue Reading...";
+    }
+}
+</script>
 
-
-  <p>
-
-    <picture>
-    <source srcset="images/troanary_mathematics_hidden_code.webp" type="image/webp">
-    <img src="images/troanary_mathematics_hidden_code.png" alt="Troanary Mathematics: The Hidden Code" loading="lazy" style="display: block; margin: auto;">
-    </picture>
-      
-  </p>  
 
 
 
@@ -1226,9 +1230,11 @@
 
 
 
-        <div id="unused-images-container">
+<!-- Above Footer Unused Images Archive -->
+<div id="unused-images-container">
     <h2 style="text-align: center; color: cyan;">🔻 Unused Images Archive 🔻</h2>
-    <div class="unused-images">
+    
+    <div class="unused-images-grid">
         <picture>
             <source data-srcset="images/troanary_quantum_double_slit_experiment.webp" type="image/webp">
             <img data-src="images/troanary_quantum_double_slit_experiment.png" alt="Troanary Quantum Double-Slit Experiment" class="lazy-image">
@@ -1248,9 +1254,46 @@
             <source data-srcset="images/troanary_mathematics_hidden_code.webp" type="image/webp">
             <img data-src="images/troanary_mathematics_hidden_code.png" alt="Troanary Mathematics: The Hidden Code" class="lazy-image">
         </picture>
+
+        <picture>
+            <source data-srcset="images/troanary_mirror_theory_society.webp" type="image/webp">
+            <img data-src="images/troanary_mirror_theory_society.png" alt="Mirror Theory & Society" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/troanary_computing_pyramid.webp" type="image/webp">
+            <img data-src="images/troanary_computing_pyramid.png" alt="Troanary Computing Pyramid" class="lazy-image">
+        </picture>
     </div>
 </div>
 
+<!-- CSS for Two-Column Grid -->
+<style>
+.unused-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.lazy-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .unused-images-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+</style>
+
+<!-- Lazy Load JavaScript -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const lazyImages = document.querySelectorAll(".lazy-image");
@@ -1279,6 +1322,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
+        
         
 
         <a href="#top" class="top-link">🔼 Back to Top</a>

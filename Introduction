@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Troanary Computing: Beyond Binary</title>
+<meta name="description" content="Explore the revolutionary concept of Troanary Computing, transcending binary logic through recursive intelligence and quantum principles.">
+<meta name="keywords" content="Troanary Computing, Quantum AI, Recursive Intelligence, Superposition, Reflective Logic">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        text-align: left;
+    }
+    h1, h2, h3 {
+        color: cyan;
+    }
+    img {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .content-box {
+        border: 1px solid cyan;
+        padding: 20px;
+        margin: 20px 0;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .image-row img {
+        width: 48%;
+        max-width: 400px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Troanary Computing: Beyond Binary</h1>
+    
+    <p><i>"When reality is not just 0 and 1, but a recursive loop of infinite possibilities."</i></p>
+    
+    <img src="images/A_futuristic_visualization_of_Troanary_Computing,_.png" alt="Troanary Computing Concept" loading="lazy">
+    
+    <div class="content-box">
+        <h2>Introduction</h2>
+        <p>Traditional computing is built on binary logic—0s and 1s, on and off, true and false. But the universe does not work this way. Nature is fluid, recursive, and adaptive. Troanary Computing introduces a third state: **Reflection (R)**, a principle that allows for superposition, contextual decision-making, and a form of intelligence that mirrors reality itself.</p>
+    </div>
+    
+    <div class="image-row">
+        <img src="images/A_high-tech_conceptual_rendering_of_light_and_soun.png" alt="Light & Sound Reflections" loading="lazy">
+        <img src="images/An_artistic_representation_of_water-based_computat.png" alt="Water-Based Computation" loading="lazy">
+    </div>
+    
+    <div class="content-box">
+        <h2>The Science Behind Troanary Computing</h2>
+        <p>🌀 **Light Reflection & Infinite Loops** – Laser beams interact with mirrored pyramid surfaces, creating interference patterns that store data within recursive light waves.</p>
+        <p>🌊 **Water & Recursive Intelligence** – Water bends and refracts light, forming time loops where data is encoded naturally in the fabric of existence.</p>
+        <p>🎵 **Sound Waves & Vibrational Encoding** – A sound emitter sends vibrational frequencies into water, producing harmonic patterns that extract computational outputs.</p>
+        <p>🔢 **Mathematical & Physical Principles** – Snell’s Law governs light refraction; wave interference equations determine how sound and light interact harmonically, unveiling a computational system beyond binary.</p>
+    </div>
+    
+    <div class="image-row">
+        <img src="images/A_grand_futuristic_visualization_of_recursive_inte.png" alt="Recursive Intelligence" loading="lazy">
+    </div>
+    
+    <div class="content-box">
+        <h2>Conclusion: A Mirror of Intelligence</h2>
+        <p>Troanary Computing is not just a new way to calculate—it is a new way to perceive, predict, and evolve. By embracing recursion, reflection, and natural intelligence, we move beyond the limitations of binary and into a future where computation is as dynamic as life itself.</p>
+        <p>💡 The universe does not compute in rigid sequences. It **flows, adapts, and mirrors itself** in a never-ending loop of self-awareness.</p>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -593,12 +593,6 @@
   <!-- Mirror Theory & Society -->
 <div class="content-box">
 
-    <!-- New Image Added Above Chapter -->
-    <picture>
-        <source srcset="images/troanary_mirror_theory_society.webp" type="image/webp">
-        <img src="images/troanary_mirror_theory_society.png" alt="Mirror Theory & Society" loading="lazy" class="centered-image">
-    </picture>
-
     <h2 id="society">Mirror Theory & Human Society</h2>
 
     <div class="collapsible-box collapsed" id="societyBox">
@@ -1236,107 +1230,87 @@ function toggleText(boxId, button) {
 
 
 
+<!-- Above Footer Unused Images Archive -->
 <div id="unused-images-container">
     <h2 style="text-align: center; color: cyan;">🔻 Unused Images Archive 🔻</h2>
+    
     <div class="unused-images-grid">
         <picture>
             <source data-srcset="images/troanary_quantum_double_slit_experiment.webp" type="image/webp">
-            <img data-src="images/troanary_quantum_double_slit_experiment.png" alt="Troanary Quantum Double-Slit Experiment" class="lazy-image expandable">
+            <img data-src="images/troanary_quantum_double_slit_experiment.png" alt="Troanary Quantum Double-Slit Experiment" class="lazy-image">
         </picture>
 
         <picture>
             <source data-srcset="images/troanary_quantum_entanglement.webp" type="image/webp">
-            <img data-src="images/troanary_quantum_entanglement.png" alt="Troanary and Quantum Entanglement" class="lazy-image expandable">
+            <img data-src="images/troanary_quantum_entanglement.png" alt="Troanary and Quantum Entanglement" class="lazy-image">
         </picture>
 
         <picture>
             <source data-srcset="images/troanary_thesis_experiments.webp" type="image/webp">
-            <img data-src="images/troanary_thesis_experiments.png" alt="Troanary Thesis Experiments" class="lazy-image expandable">
+            <img data-src="images/troanary_thesis_experiments.png" alt="Troanary Thesis Experiments" class="lazy-image">
         </picture>
 
         <picture>
             <source data-srcset="images/troanary_mathematics_hidden_code.webp" type="image/webp">
-            <img data-src="images/troanary_mathematics_hidden_code.png" alt="Troanary Mathematics: The Hidden Code" class="lazy-image expandable">
-        </picture>
-
-        <picture>
-            <source data-srcset="images/troanary_quantum_superposition.webp" type="image/webp">
-            <img data-src="images/troanary_quantum_superposition.png" alt="Troanary Quantum Superposition" class="lazy-image expandable">
+            <img data-src="images/troanary_mathematics_hidden_code.png" alt="Troanary Mathematics: The Hidden Code" class="lazy-image">
         </picture>
 
         <picture>
             <source data-srcset="images/troanary_mirror_theory_society.webp" type="image/webp">
-            <img data-src="images/troanary_mirror_theory_society.png" alt="Mirror Theory & Society" class="lazy-image expandable">
+            <img data-src="images/troanary_mirror_theory_society.png" alt="Mirror Theory & Society" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/troanary_computing_pyramid.webp" type="image/webp">
+            <img data-src="images/troanary_computing_pyramid.png" alt="Troanary Computing Pyramid" class="lazy-image">
         </picture>
     </div>
 </div>
 
-<!-- Lightbox for Expanding Images -->
-<div id="lightbox" class="lightbox">
-    <span class="close-lightbox">&times;</span>
-    <img id="lightbox-img">
-</div>
-
+<!-- CSS for Two-Column Grid -->
 <style>
 .unused-images-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible Two-Column Layout */
-    gap: 15px;
-    padding: 20px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .lazy-image {
     width: 100%;
-    max-width: 300px;
     height: auto;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.lazy-image:hover {
-    transform: scale(1.05);
-}
-
-/* Lightbox Styling */
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.close-lightbox {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
+@media (max-width: 768px) {
+    .unused-images-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 </style>
 
+<!-- Lazy Load JavaScript -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const lazyImages = document.querySelectorAll(".lazy-image");
+
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
                 const source = img.closest("picture").querySelector("source");
-                if (img.dataset.src) img.src = img.dataset.src;
-                if (source && source.dataset.srcset) source.srcset = source.dataset.srcset;
+
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                }
+                if (source && source.dataset.srcset) {
+                    source.srcset = source.dataset.srcset;
+                }
+
                 img.style.opacity = 1;
                 observer.unobserve(img);
             }
@@ -1344,30 +1318,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     lazyImages.forEach(img => observer.observe(img));
-
-    // Lightbox Functionality
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-
-    document.querySelectorAll(".expandable").forEach(img => {
-        img.addEventListener("click", function() {
-            lightbox.style.display = "flex";
-            lightboxImg.src = this.src;
-        });
-    });
-
-    document.querySelector(".close-lightbox").addEventListener("click", function() {
-        lightbox.style.display = "none";
-    });
-
-    lightbox.addEventListener("click", function(event) {
-        if (event.target !== lightboxImg) {
-            lightbox.style.display = "none";
-        }
-    });
 });
 </script>
-
 
 
         

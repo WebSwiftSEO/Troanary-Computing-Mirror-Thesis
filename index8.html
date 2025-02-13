@@ -16,6 +16,90 @@
             text-align: center;
         }
 
+
+                /* 🔥 EPIC CYAN LASER BUTTON 🔥 */
+        .menu-toggle {
+            background: linear-gradient(90deg, cyan, #00ffff, cyan);
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0px 0px 15px cyan;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+        }
+        
+        .menu-toggle:hover {
+            box-shadow: 0px 0px 25px cyan;
+            transform: scale(1.1);
+        }
+        
+        /* 🌌 EXPANDING NAV MENU */
+        .page-menu {
+            display: none;
+            background-color: rgba(0, 255, 255, 0.15);
+            text-align: center;
+            padding: 15px 0;
+            border-top: 3px solid cyan;
+            border-radius: 10px;
+            max-width: 300px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 20px cyan;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* 🌟 MENU ITEMS */
+        .page-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .page-menu li {
+            padding: 10px;
+        }
+        
+        .page-menu a {
+            color: cyan;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .page-menu a:hover {
+            background-color: rgba(0, 255, 255, 0.2);
+            box-shadow: 0px 0px 10px cyan;
+        }
+        
+        /* 📂 DROPDOWN MENU */
+        .dropdown-content {
+            display: none;
+            background-color: rgba(0, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 5px 0;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+
+        
+
         h1, h2 {
             color: cyan;
             text-align: center;
@@ -81,6 +165,33 @@
 </head>
 
 <body>
+    
+<!-- 🔥 CYAN LASER MENU BUTTON -->
+<button class="menu-toggle" onclick="toggleMenu()">☰ Coming Soon</button>
+
+<!-- 📜 EXPANDING NAV MENU -->
+<nav class="page-menu">
+    <ul id="menu-list">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="Beyond-Binary.html">💡 Troanary Computing</a></li>
+        <li><a href="Mathematics.html">📐 Troanary Mathematics</a></li>
+        <li><a href="Quantum-Reflection-Superposition.html">🔬 Quantum Reflection</a></li>
+        <li><a href="Reflective-AI-Neural-Networks.html">🤖 Reflective AI</a></li>
+        <li><a href="Human-Society.html">🪞 Mirror Theory</a></li>
+        <li><a href="Energy-Music-Universe.html">🎶 Energy & Music</a></li>
+        <li class="dropdown">
+            <a href="Experiments-Superposition-Entanglement-Double-Slit.html" class="dropbtn">🧪 Experiments ⏬</a>
+            <ul class="dropdown-content">
+                <li><a href="exp-superposition.html">✨ Quantum Superposition</a></li>
+                <li><a href="exp-entanglement.html">🔗 Quantum Entanglement</a></li>
+                <li><a href="exp-double-slit.html">🎯 Double-Slit Experiment</a></li>
+            </ul>
+        </li>
+        <li><a href="Conclusion-is-it-Everything.html">🔚 Conclusion</a></li>
+    </ul>
+</nav>
+
+
     <h1 id="top">Troanary Computing & The Mirror Thesis</h1>
     <p><i>"If everything is a mirror, then even this thesis reflects itself."</i></p>
 
@@ -1228,11 +1339,11 @@ function toggleText(boxId, button) {
         </script>
 
 
-
+        <a href="#top" class="top-link">🔼 Back to Top</a>
 
 <!-- Above Footer Unused Images Archive -->
 <div id="unused-images-container">
-    <h2 style="text-align: center; color: cyan;">🔻 Unused Images Archive 🔻</h2>
+    <h2 style="text-align: center; color: cyan;">🔻 Troanary Image Archive 🔻</h2>
     
     <div class="unused-images-grid">
         <picture>
@@ -1256,13 +1367,63 @@ function toggleText(boxId, button) {
         </picture>
 
         <picture>
-            <source data-srcset="images/troanary_mirror_theory_society.webp" type="image/webp">
-            <img data-src="images/troanary_mirror_theory_society.png" alt="Mirror Theory & Society" class="lazy-image">
+            <source data-srcset="images/050DAAD3-716C-434B-B4F6-F6ACB4BD0AD4.png" type="image/webp">
+            <img data-src="images/050DAAD3-716C-434B-B4F6-F6ACB4BD0AD4.png" alt="The Tibetan Drum eBook" class="lazy-image">
         </picture>
 
         <picture>
-            <source data-srcset="images/troanary_computing_pyramid.webp" type="image/webp">
-            <img data-src="images/troanary_computing_pyramid.png" alt="Troanary Computing Pyramid" class="lazy-image">
+            <source data-srcset="images/058CF1B8-E558-48FA-9EF7-48B0BDE75923.png" type="image/webp">
+            <img data-src="images/058CF1B8-E558-48FA-9EF7-48B0BDE75923.png" alt="Troanary and Blockchain Computations" class="lazy-image">
+        </picture>
+
+         <picture>
+            <source data-srcset="images/174B0E7B-5A15-4F50-9CF8-7D1D2435000D.png" type="image/webp">
+            <img data-src="images/174B0E7B-5A15-4F50-9CF8-7D1D2435000D.png" alt="Troanary Mirror Computers" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/22F8EBCA-AB25-442D-8289-031FD4D2FBCC.png" type="image/webp">
+            <img data-src="images/22F8EBCA-AB25-442D-8289-031FD4D2FBCC.png" alt="Troanary Epic Love Story" class="lazy-image">
+        </picture>
+
+         <picture>
+            <source data-srcset="images/19A4E35F-8A18-4254-9766-AD587ED62580.png" type="image/webp">
+            <img data-src="images/19A4E35F-8A18-4254-9766-AD587ED62580.png" alt="Troanary Computing Classroom & Society" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/4FA6132E-9F4B-4C2A-ADDD-8C19AB0FDE5B.png" type="image/webp">
+            <img data-src="images/4FA6132E-9F4B-4C2A-ADDD-8C19AB0FDE5B.png" alt="Troanary Computing Pyramid Test Ratios" class="lazy-image">
+        </picture>
+
+         <picture>
+            <source data-srcset="images/75BE3F6E-188E-400E-A405-3BC8CC38C0C5.png" type="image/webp">
+            <img data-src="images/75BE3F6E-188E-400E-A405-3BC8CC38C0C5.png" alt="Mirror Liquid Water Resonance" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/7B72B547-913D-4465-AE3A-8F0F1B99F720.png" type="image/webp">
+            <img data-src="images/7B72B547-913D-4465-AE3A-8F0F1B99F720.png" alt="Troanary Computing Snells Law" class="lazy-image">
+        </picture>
+
+         <picture>
+            <source data-srcset="images/84B2E0BC-6CCE-436A-8EC8-8BC9EEB42A20.png" type="image/webp">
+            <img data-src="images/84B2E0BC-6CCE-436A-8EC8-8BC9EEB42A20.png" alt="Mirror Troanary Beyond Binary and Quantum" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/BA6FCE92-072F-45E3-928A-F4649D8DF7A5.png" type="image/webp">
+            <img data-src="images/BA6FCE92-072F-45E3-928A-F4649D8DF7A5.png" alt="Troanary Computing Prisms" class="lazy-image">
+        </picture>
+
+         <picture>
+            <source data-srcset="images/C8133280-01FD-4E0F-A832-53E94DF33371.png" type="image/webp">
+            <img data-src="images/C8133280-01FD-4E0F-A832-53E94DF33371.png" alt="Troanary Mirror Thesis" class="lazy-image">
+        </picture>
+
+        <picture>
+            <source data-srcset="images/D1A8C8CB-73DB-4F2C-88FA-89383D286496.png" type="image/webp">
+            <img data-src="images/D1A8C8CB-73DB-4F2C-88FA-89383D286496.png" alt="Troanary Computing Brain" class="lazy-image">
         </picture>
     </div>
 </div>

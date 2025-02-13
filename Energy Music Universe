@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy, Music & The Universe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #ff8c00, #ff0080);
+            color: #fff;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        section {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.5);
+            margin-bottom: 30px;
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .image-section img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+        ul {
+            line-height: 1.8;
+            font-size: 1.2em;
+        }
+        h2 {
+            color: #ff8c00;
+            font-size: 1.8em;
+        }
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Energy, Music & The Universe</header>
+    
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>The universe vibrates with energy, and music is its purest expression. From cosmic waves to harmonic resonance, sound is the language of the cosmos, binding energy, matter, and consciousness into one infinite symphony.</p>
+    </section>
+    
+    <section id="image-comparison-1" class="image-section">
+        <img src="images/cosmic-music-waves.webp" alt="Cosmic Music Waves" width="500">
+        <img src="images/universal-energy-flow.webp" alt="Universal Energy Flow" width="500">
+    </section>
+    
+    <section id="body">
+        <h2>The Connection Between Energy, Music & The Universe</h2>
+        <p>Everything in existence vibrates at a frequency, from the smallest atom to the grandest galaxy. Music, as an organized form of vibration, is the bridge between physical and metaphysical realms. Key aspects include:</p>
+        <ul>
+            <li><strong>Resonance & Frequency:</strong> How sound waves align with cosmic rhythms.</li>
+            <li><strong>The Golden Ratio in Music:</strong> How universal patterns shape harmonic structures.</li>
+            <li><strong>Quantum Sound:</strong> The impact of music on molecular and energetic levels.</li>
+        </ul>
+    </section>
+    
+    <section id="image-comparison-2" class="image-section">
+        <img src="images/galactic-symphony.webp" alt="Galactic Symphony" width="500">
+        <img src="images/energy-music-connection.webp" alt="Energy and Music Connection" width="500">
+    </section>
+    
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>Energy and music are not just expressions of life—they are the fundamental fabric of reality. By understanding this deep connection, we unlock new dimensions of perception, creativity, and harmony with the universe itself.</p>
+    </section>
+</body>
+</html>

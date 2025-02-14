@@ -112,6 +112,8 @@
 
 <body>
     
+<!-- 🔥 CYAN LASER MENU BUTTON -->
+<button class="menu-toggle" onclick="toggleMenu()">☰ Coming Soon</button>
 
 <!-- 📜 EXPANDING NAV MENU -->
 <nav class="page-menu">
@@ -172,6 +174,12 @@
             <li><a href="#conclusion">Conclusion: The Mirror of Everything</a></li>
         </ul>
         
+        <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.style.display = (dropdown.style.display === "none") ? "block" : "none";
+            }
+        </script>
 
 
 
@@ -336,6 +344,51 @@
     <span class="read-more" onclick="toggleText('troanaryBox', this)">Continue Reading...</span>
 </div>
 
+<!-- JavaScript for Collapsible Boxes -->
+<script>
+    function toggleText(id, btn) {
+        let textBox = document.getElementById(id);
+        if (textBox.classList.contains("collapsed")) {
+            textBox.classList.remove("collapsed");
+            textBox.style.maxHeight = textBox.scrollHeight + "px"; // Expand properly
+            btn.textContent = "Show Less";
+        } else {
+            textBox.classList.add("collapsed");
+            textBox.style.maxHeight = "120px"; // Set initial collapsed height
+            btn.textContent = "Continue Reading...";
+        }
+    }
+</script>
+
+<style>
+    .collapsible-box {
+        border: 2px solid cyan;
+        padding: 6px;
+        width: 96%;
+        max-width: 800px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .collapsed {
+        max-height: 120px; /* Allows expansion */
+        overflow: hidden;
+    }
+
+    .read-more {
+        display: block;
+        color: cyan;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+
+
+
         
 
 
@@ -451,6 +504,17 @@
 </div>
 
 
+<!-- JavaScript to Toggle Boxes -->
+<script>
+    function toggleText(id, button) {
+        var textBox = document.getElementById(id);
+        textBox.classList.toggle("collapsed");
+        button.textContent = textBox.classList.contains("collapsed") ? "Continue Reading..." : "Show Less";
+    }
+</script>
+
+
+        
 
 
         
@@ -667,6 +731,18 @@
 
 </div>
 
+<script>
+function toggleText(boxId, button) {
+    const textBox = document.getElementById(boxId);
+    if (textBox.classList.contains("collapsed")) {
+        textBox.classList.remove("collapsed");
+        button.textContent = "Show Less";
+    } else {
+        textBox.classList.add("collapsed");
+        button.textContent = "Continue Reading...";
+    }
+}
+</script>
 
 
 
@@ -835,7 +911,18 @@
     <span class="read-more" onclick="toggleText('textBoxExperimentsBottom', this)">Continue Reading...</span>
 </div>
 
-
+<script>
+    function toggleText(boxId, button) {
+        const textBox = document.getElementById(boxId);
+        if (textBox.classList.contains("collapsed")) {
+            textBox.classList.remove("collapsed");
+            button.textContent = "Show Less";
+        } else {
+            textBox.classList.add("collapsed");
+            button.textContent = "Continue Reading...";
+        }
+    }
+</script>
 
 
 
@@ -955,6 +1042,14 @@
 </div>
 
 
+<!-- JavaScript to Toggle Boxes -->
+<script>
+    function toggleText(id, button) {
+        var textBox = document.getElementById(id);
+        textBox.classList.toggle("collapsed");
+        button.textContent = textBox.classList.contains("collapsed") ? "Continue Reading..." : "Show Less";
+    }
+</script>
 
 
 
@@ -1029,7 +1124,18 @@
     <span class="read-more" onclick="toggleText('textBoxEntanglementBottom', this)">Continue Reading...</span>
 </div>
 
-
+<script>
+    function toggleText(boxId, button) {
+        const textBox = document.getElementById(boxId);
+        if (textBox.classList.contains("collapsed")) {
+            textBox.classList.remove("collapsed");
+            button.textContent = "Show Less";
+        } else {
+            textBox.classList.add("collapsed");
+            button.textContent = "Continue Reading...";
+        }
+    }
+</script>
 
 
         
@@ -1108,7 +1214,18 @@
     <span class="read-more" onclick="toggleText('textBoxDoubleSlitBottom', this)">Continue Reading...</span>
 </div>
 
-
+<script>
+    function toggleText(boxId, button) {
+        const textBox = document.getElementById(boxId);
+        if (textBox.classList.contains("collapsed")) {
+            textBox.classList.remove("collapsed");
+            button.textContent = "Show Less";
+        } else {
+            textBox.classList.add("collapsed");
+            button.textContent = "Continue Reading...";
+        }
+    }
+</script>
 
 
 
@@ -1190,7 +1307,22 @@
 
 
 
-
+        
+        <!-- JavaScript -->
+        <script>
+            function toggleText(id, element) {
+                var textBox = document.getElementById(id);
+                if (textBox.classList.contains("collapsed")) {
+                    textBox.classList.remove("collapsed");
+                    textBox.style.maxHeight = textBox.scrollHeight + "px";
+                    element.textContent = "Show Less";
+                } else {
+                    textBox.classList.add("collapsed");
+                    textBox.style.maxHeight = "120px";
+                    element.textContent = "Continue Reading...";
+                }
+            }
+        </script>
 
 
         <a href="#top" class="top-link">🔼 Back to Top</a>
@@ -1327,6 +1459,31 @@
     </div>
 </div>
 
+<!-- CSS for Two-Column Grid -->
+<style>
+.unused-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.lazy-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .unused-images-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+</style>
 
 <!-- 🔥 CYAN LASER MENU BUTTON -->
 <button class="menu-toggle" onclick="toggleMenu()">☰ Coming Soon</button>
@@ -1359,7 +1516,6 @@
         button.textContent = textBox.classList.contains("collapsed") ? "Continue Reading..." : "Show Less";
     }
 </script>
-    
-</body>
 
+</body>
 </html>

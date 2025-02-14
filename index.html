@@ -1485,47 +1485,37 @@ function toggleText(boxId, button) {
 }
 </style>
 
-<!-- Lazy Load JavaScript -->
+<!-- 🔥 CYAN LASER MENU BUTTON -->
+<button class="menu-toggle" onclick="toggleMenu()">☰ Coming Soon</button>
+
+<!-- 📜 EXPANDING NAV MENU -->
+<nav class="page-menu" id="menu" style="display: none;">
+    <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="Beyond-Binary.html">💡 Troanary Computing</a></li>
+        <li><a href="Mathematics.html">📐 Troanary Mathematics</a></li>
+        <li><a href="Quantum-Reflection-Superposition.html">🔬 Quantum Reflection</a></li>
+        <li><a href="Reflective-AI-Neural-Networks.html">🤖 Reflective AI</a></li>
+        <li><a href="Human-Society.html">🪞 Mirror Theory</a></li>
+        <li><a href="Energy-Music-Universe.html">🎶 Energy & Music</a></li>
+        <li><a href="Conclusion-is-it-Everything.html">🔚 Conclusion</a></li>
+    </ul>
+</nav>
+
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const lazyImages = document.querySelectorAll(".lazy-image");
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                const source = img.closest("picture").querySelector("source");
-
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                }
-                if (source && source.dataset.srcset) {
-                    source.srcset = source.dataset.srcset;
-                }
-
-                img.style.opacity = 1;
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    lazyImages.forEach(img => observer.observe(img));
-});
-</script>
-
-
-        
-        
-
-        <a href="#top" class="top-link">🔼 Back to Top</a>
-    </div>
-
-    <script>
     function toggleMenu() {
         var menu = document.getElementById("menu");
-        menu.classList.toggle("hidden");
+        menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
     }
-    </script>
+</script>
+
+<script>
+    function toggleText(id, button) {
+        var textBox = document.getElementById(id);
+        textBox.classList.toggle("collapsed");
+        button.textContent = textBox.classList.contains("collapsed") ? "Continue Reading..." : "Show Less";
+    }
+</script>
     
 </body>
 

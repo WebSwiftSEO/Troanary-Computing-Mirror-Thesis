@@ -169,6 +169,30 @@
             display: block;
         }
 
+<!-- CSS for Two-Column Grid -->
+.unused-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.lazy-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .unused-images-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
     .glow-button {
       display: inline-block;
       margin: 10px;
@@ -1540,54 +1564,26 @@ function toggleText(boxId, button) {
     Explore the growing network of Troanary and Mirror Thesis projects. Each platform contributes to a unified vision of advanced computing, decentralized systems, and improving global quality of life. Click below to visit each site and dive deeper into the future of information, technology, and human potential.
   </p>
 
-  <h2 style="color: orange;">Troanary Computing Mirror Thesis</h2>
-  <a href="https://webswiftseo.github.io/Troanary-Computing-Mirror-Thesis" class="glow-button" target="_blank">Visit Mirror Thesis</a>
-
-  <h2 style="color: orange;">Troanary WordPress Blog</h2>
-  <a href="https://troanary.wordpress.com/" class="glow-button" target="_blank">Visit WordPress Blog</a>
-
-  <h2 style="color: orange;">Tc Coin Blockchain</h2>
-  <a href="https://webswiftseo.github.io/tc-coin/" class="glow-button" target="_blank">Visit Tc Coin</a>
-
-  <h2 style="color: orange;">TroLab</h2>
-  <a href="https://webswiftseo.github.io/TroLab/" class="glow-button" target="_blank">Visit TroLab</a>
-
-  <h2 style="color: orange;">Tc Sharing App</h2>
-  <a href="https://webswiftseo.github.io/TC-Sharing-App/" class="glow-button" target="_blank">Visit Sharing App</a>
-
-  <h2 style="color: orange;">Gov Law Health Portal</h2>
-  <a href="https://webswiftseo.github.io/GovLawHealth-Portal" class="glow-button" target="_blank">Visit Health Portal</a>
-
-  <h2 style="color: orange;">Global Quality of Life-O-Meter</h2>
-  <a href="https://webswiftseo.github.io/Global-Quality-of-Life-Ometer" class="glow-button" target="_blank">Visit Quality-O-Meter</a>
-</div>
-
-
-      <div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 20px;">
-  <p style="font-size: 1.2rem;">
-    Explore the growing network of Troanary and Mirror Thesis projects. Each platform contributes to a unified vision of advanced computing, decentralized systems, and improving global quality of life. Click below to visit each site and dive deeper into the future of information, technology, and human potential.
-  </p>
+  <h2 style="color: orange;">Troanary Reflective Computer🔺</h2>
+  <a href="https://webswiftseo.github.io/troanary-reflective-computer/" class="glow-button" target="_blank">Troanary Reflective Computer🔺</a>
 
   <h2 style="color: orange;">Troanary Computing Mirror Thesis</h2>
-  <p><a href="https://webswiftseo.github.io/Troanary-Computing-Mirror-Thesis" style="color: orange;">https://webswiftseo.github.io/Troanary-Computing-Mirror-Thesis</a></p>
+  <a href="https://webswiftseo.github.io/Troanary-Computing-Mirror-Thesis" class="glow-button" target="_blank">Mirror Thesis</a>
 
   <h2 style="color: orange;">Troanary WordPress Blog</h2>
-  <p><a href="https://troanary.wordpress.com/" style="color: orange;">https://troanary.wordpress.com/</a></p>
-
-  <h2 style="color: orange;">Tc Coin Blockchain</h2>
-  <p><a href="https://webswiftseo.github.io/tc-coin/" style="color: orange;">https://webswiftseo.github.io/tc-coin/</a></p>
+  <a href="https://troanary.wordpress.com/" class="glow-button" target="_blank">Troanary Blog</a>
 
   <h2 style="color: orange;">TroLab</h2>
-  <p><a href="https://webswiftseo.github.io/TroLab/" style="color: orange;">https://webswiftseo.github.io/TroLab/</a></p>
+  <a href="https://webswiftseo.github.io/TroLab/" class="glow-button" target="_blank">TroLab</a>
 
   <h2 style="color: orange;">Tc Sharing App</h2>
-  <p><a href="https://webswiftseo.github.io/TC-Sharing-App/" style="color: orange;">https://webswiftseo.github.io/TC-Sharing-App/</a></p>
+  <a href="https://webswiftseo.github.io/TC-Sharing-App/" class="glow-button" target="_blank">Sharing App</a>
 
   <h2 style="color: orange;">Gov Law Health Portal</h2>
-  <p><a href="https://webswiftseo.github.io/GovLawHealth-Portal" style="color: orange;">https://webswiftseo.github.io/GovLawHealth-Portal</a></p>
+  <a href="https://webswiftseo.github.io/GovLawHealth-Portal" class="glow-button" target="_blank">Gov Portal</a>
 
   <h2 style="color: orange;">Global Quality of Life-O-Meter</h2>
-  <p><a href="https://webswiftseo.github.io/Global-Quality-of-Life-Ometer" style="color: orange;">https://webswiftseo.github.io/Global-Quality-of-Life-Ometer</a></p>
+  <a href="https://webswiftseo.github.io/Global-Quality-of-Life-Ometer" class="glow-button" target="_blank">Quality-O-Meter</a>
 </div>
         <picture>
             <source srcset="images/troanary_computing_summary.webp" type="image/webp">
@@ -1599,31 +1595,7 @@ function toggleText(boxId, button) {
         <p><a href="https://github.com/WebSwiftSEO/" style="color: cyan; font-weight: bold;">🔚View Open Source Code</a></p>
         <p><a href="https://troanary.wordpress.com/" style="color: cyan; font-weight: bold;">🔚View New WebApp Troanary.WordPress.com </a></p>
 
-<!-- CSS for Two-Column Grid -->
-<style>
-.unused-images-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
 
-.lazy-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-@media (max-width: 768px) {
-    .unused-images-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-</style>
 
 <!-- Lazy Load JavaScript -->
 <script>
